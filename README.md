@@ -6,7 +6,7 @@
 - En terminal, ingresar a la carpeta del proyecto
 - Instalar dependencias (con ```uv```queda mejor)
 
-  ```(uv) pip install -r requirements```
+  ```(uv) pip install -r requirements.txt```
   
 - Escribir el siguiente comando:
 
