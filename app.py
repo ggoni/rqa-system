@@ -36,9 +36,9 @@ if uploaded_file:
 
     #Step 7: Prompt
     prompt = """
-        1. Use ONLY the context below.
-        2. If unsure, say "I don't know".
-        3. Keep answers under 4 sentences.
+        1. Usa SOLAMENTE el contenido adjunto.
+        2. Si no estás seguro, simplemente di "No sé".
+        3. Manten las respuestas en 4 frases máximo.
 
         Context: {context}
 
@@ -65,10 +65,10 @@ if uploaded_file:
     )
 
     # Step 10: Create Streamlit UI for the application
-    user_input = st.text_input("Ask your PDF a question:")
+    user_input = st.text_input("Pregúntale al PDF:")
 
     if user_input:
-        with st.spinner("Thinking..."):
+        with st.spinner("Pensando..."):
             try:
                 response = qa.run(user_input)  
                 st.write(response)
